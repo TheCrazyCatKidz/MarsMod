@@ -49,20 +49,6 @@ class Client extends Discord.Client {
 				defaultPermission: true
 			}));
 
-		
-
-
-			// .forEach(file => {
-			// 	/**
-			// 	 * @type {Command}
-			// 	 */
-			// 	const command = require(`../Commands/${file}`);
-			// 	console.log(`Command ${command.name} loaded`);
-			// 	this.commands.set(command.name, command);
-			// });
-
-		// Event Handler
-
 		this.removeAllListeners();
 
 		this.on("ready", async () => {
