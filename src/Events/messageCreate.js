@@ -2,6 +2,8 @@
 
 const Event = require("../Structures/Event.js");
 const { MessageEmbed, MessageActionRow, MessageButton, Message } = require('discord.js')
+const db = require('quick.db')
+
 module.exports = new Event("messageCreate", (client, message) => {
 	if (message.author.bot) return;
 
@@ -37,4 +39,6 @@ module.exports = new Event("messageCreate", (client, message) => {
 		return message.reply("You need `" + command.permission + "` to use this command.");
 
 	command.run(message, args, client);
+
+
 });
