@@ -34,3 +34,7 @@ module.exports = new Command({
 ---
 
 # Edit this text and make a pull request and you'll be featured as a contibuitor (Only if you add stuff.)
+
+# Developed by Vapqrr
+# Contributions by:
+# * TheCrazyCatKidz
